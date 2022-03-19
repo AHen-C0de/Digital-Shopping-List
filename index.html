@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/api.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Gerichte-Abfrage</title>
+    </head>
+    <body>
+
+        <table class="selectionTable">
+            <tr>
+                <td id="checkInBox" class="checkIn">
+                    <button 
+                        id="checkIn"
+                        class="button"
+                        onclick="checkIn()">
+                        Auf Einkaufsliste setzen
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td id="mainBox" class="main">
+                    <button 
+                        id="gerichte"
+                        class="button"
+                        onclick="getMeals()">
+                        Gerichte
+                    </button>
+                </td>
+                <td id="mealsBox" class="meals"></td>
+                <td id="incredientsBox" class="incredients"></td>
+            </tr>
+            <tr>
+                <td id="listBox" class="list"></td>
+            </tr>
+        </table>
+        
+        <div id="test"></div>
+
+    </body>    
+</html>
